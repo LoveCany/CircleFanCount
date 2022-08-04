@@ -22,3 +22,4 @@ Inspired by [UmamusumeResponseAnalyzer](https://github.com/UmamusumeResponseAnal
 - [ ] 配置文件与UmamusumeResponseAnalyzer分离，避免配置冲突相互覆盖
 - [ ] 支持手动指定CSV数据导出地址
 - [ ] 功能剥离为独立模块，发起PR合并到URA中
+- [ ] 游戏启动->进入公会过程自动执行，实现BOT指令集成（由于DMM端OS限制目前仅能在Win端实现）
