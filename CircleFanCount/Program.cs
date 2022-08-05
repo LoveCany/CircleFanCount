@@ -20,7 +20,7 @@ namespace CircleFanCount
 
             if (!AnsiConsole.Profile.Capabilities.Ansi && !runInCmder)
             { //不支持ANSI Escape Sequences，用Cmder打开
-                var cmderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "UmamusumeResponseAnalyzer", "cmder");
+                var cmderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "CircleFanCount", "cmder");
                 var docPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "CircleFanCount");
                 if (!Directory.Exists(docPath))
                     Directory.CreateDirectory(docPath);
@@ -28,7 +28,7 @@ namespace CircleFanCount
                 var StartInfo = new ProcessStartInfo
                 {
                     FileName = Path.Combine(cmderPath, "Cmder.exe"),
-                    Arguments = $"/start \"{Environment.CurrentDirectory}\" /task URA",
+                    Arguments = $"/start \"{Environment.CurrentDirectory}\" /task CFC",
                     CreateNoWindow = false,
                     UseShellExecute = true
                 };
