@@ -9,13 +9,18 @@
 		<AssemblyVersion></AssemblyVersion>
 		<FileVersion></FileVersion>
 		<Authors>$(AssemblyName)</Authors>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 		<ApplicationIcon>icon.ico</ApplicationIcon>
 		<PublishTrimmed>true</PublishTrimmed>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/LoveCany/CircleFanCount</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>umamusume</PackageTags>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
 		<NoWarn>1701;1702;CS8509;CS8618</NoWarn>
+		<Optimize>True</Optimize>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

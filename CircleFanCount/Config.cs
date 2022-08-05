@@ -11,7 +11,7 @@ namespace CircleFanCount
 {
     internal static class Config
     {
-        internal static string CONFIG_FILEPATH = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "UmamusumeResponseAnalyzer", ".config");
+        internal static string CONFIG_FILEPATH = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "CircleFanCount", ".config");
         internal static Dictionary<string, string[]> ConfigSet { get; set; } = new();
         internal static Dictionary<string, object> Configuration { get; private set; } = new();
         internal static void Initialize()
@@ -22,7 +22,7 @@ namespace CircleFanCount
             });
             ConfigSet.Add(Resource.ConfigSet_SaveResponseForDebug, Array.Empty<string>());
             ConfigSet.Add(Resource.ConfigSet_DMMLaunch, Array.Empty<string>());
-            Directory.CreateDirectory(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "UmamusumeResponseAnalyzer"));
+            Directory.CreateDirectory(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "CircleFanCount"));
             if (File.Exists(CONFIG_FILEPATH))
             {
                 try
